@@ -1,0 +1,351 @@
+import random
+
+class spec:
+    def __init__(self, hgt, name, asp1=0, asp2=0, asp3=0, asp4=0, asp5=0, asp6=0, asp7=0, asp8=0):
+        self.hgt=hgt
+        self.name=name
+        self.asp1=asp1
+        self.asp2=asp2
+        self.asp3=asp3
+        self.asp4=asp4
+        self.asp5=asp5
+        self.asp6=asp6
+        self.asp7=asp7
+        self.asp8=asp8
+
+
+def G():
+    global listSWspec
+
+
+    abe=spec(1.8,'abednedo')
+
+    aby=spec(2,'abyssin','regeneration')
+
+    ale=spec(0.79,'aleena')
+
+    ama=spec(4,'amanin','poison skin','night vision','curl into ball then roll')
+
+    ann=spec(2.4,'annoo-dat prime','large tail','four arms','heightened olfactory','infrared vision')
+
+    ano=spec(1.75,'anomid')
+
+    anz=spec(1.6,'anzati','anzati proboscises','very strong','heightened hearing','heightened olfactory','night vision','regeneration','telepathic hypnosis')
+
+    aqu=spec(1.8,'aqualish','more eyes')
+
+    arc=spec(1.8,'arcona')
+
+    bal=spec(1.8,'balosar','heightened hearing','toxin resistant')
+
+    bar=spec(2.05,'barabel','large claws','big teeth','stun resistant')
+
+    bes=spec(2.12,'besalisk','four arms')
+
+    bit=spec(1.8,'bith','heightened hearing')
+
+    blo=spec(2,'blood carver')
+
+    bot=spec(1.5,'bothan')
+
+    caa=spec(1.8,'caamasi','heightened olfactory')
+
+    cat=spec(1.7,'cathar','claws','regeneration')
+
+    cel=spec(2,'celegian','telepathy')
+
+    cer=spec(1.8,'cerean')
+
+    cha=spec(1,'chandra-fan','heightened olfactory','heightened hearing')
+
+    chag=spec(1.8,'chagrian')
+
+    chi=spec(1.8,'chiss','heightened hearing','heightened sight')
+
+    chis=spec(1.9,'chistori','tough skin')
+
+    cla=spec(1.8,'clawdite','shapeshifting')
+
+    cod=spec(2,'codru-ji','four arms','heightened senses')
+
+    cow=spec(1.6,'coway','heightened sight')
+
+    das=spec(1.9,'dashade','force resistant','strong')
+
+    defe=spec(1.3,'defel','nearly invisible','long claws','night vision')
+
+    dev=spec(1.8,'devaronian')
+
+    dre=spec(1.8,'dressellians')
+
+    dro=spec(2,'drovian','heightened sight')
+
+    dug=spec(1.12,'dug')
+
+    dur=spec(1.8,'duros')
+
+    elo=spec(1.8,'elomin')
+
+    epi=spec(2.5,'epicanthix','force resistant')
+
+    ewo=spec(1,'ewok','strong')
+
+    fal=spec(1.8,'falleen','mind-control')
+
+    fee=spec(2.2,'feeorin','strong')
+
+    fer=spec(1.6,'anzati','anzati proboscises','very strong','heightened hearing','heightened olfactory','night vision','regeneration','telepathic hypnosis','torse web shooting')
+
+    fro=spec(3,'frozian','heightened senses','moves fast')
+
+    gad=spec(2.5,'gados','leaping ability')
+
+    gam=spec(1.8,'gamorrean')
+
+    gan=spec(1.8,'gand')
+
+    gank=spec(1.6,'gank','battle armor','moves fast','strong')
+
+    gen=spec(0,'gen-dai','battle armor','regeneration','extremely heightened sensors','instantaneous reflexes')
+
+    geo=spec(1.78,'geonosian','wings','tough skin')
+
+    giv=spec(1.8,'givin','vacuum resistant')
+
+    gos=spec(1.2,'gossam')
+
+    got=spec(1.8,'gotal','extre sense')\
+
+    gra=spec(1.8,'gran')
+
+    gre=spec(0.8,'gree','four arms','heightened intelligence')
+
+    gun=spec(2,'gungan','leaping ability')
+
+    har=spec(2,'harch','six arms','many eyes')
+
+    her=spec(2.2,'herglic','strong','swimming')
+
+    hne=spec(1.7,'hnemthe','extra sense')
+
+    huk=spec(2,'huk','tough skin')
+
+    hss=spec(3,'hssiss','poison bite')
+
+    hut=spec(2,'hutt','strong','tough skin','force resistant')
+
+    ikt=spec(1.8,'iktotchi')
+
+    ish=spec(1.8,'ishi tib')
+
+    ith=spec(1.8,'ithorian','able to emit shockwave')
+
+    jaw=spec(1,'jawa')
+
+    kal=spec(1.8,'kaleesh')
+
+    kam=spec(2.2,'kaminoan')
+
+    kar=spec(2,'karkarodon','swimming','very strong','blaster fire resistant')
+
+    kel=spec(1.8,'kel dor','tough skin','vacuum resistant')
+
+    kit=spec(1.6,'kitonak','tough skin')
+
+    kla=spec(1.8,'klatooinian')
+
+    kow=spec(0.7,'kowakian monkey-lizard')
+
+    kyu=spec(1.8,'kyuzo','strong','heightened reflexes')
+
+    lan=spec(1.2,'lannik','heightened hearing')
+
+    las=spec(2.3,'lasat','agility','strong','leaping ability','heightened senses')
+
+    lur=spec(1,'lurmen','curl into ball then roll')
+
+    mas=spec(1.9,'massassi','strong melee ability','agility','strong','stealth','heightened senses')
+
+    mir=spec(1.8,'miraluka','force sight')
+
+    mon=spec(1.8,'mon calamari','swimming')
+
+    muu=spec(1.9,'muun','heightened intelligence')
+
+    myn=spec(1.9,'myneyrshi','four arms','tough skin')
+
+    naga=spec(1.8,'nagai','heightened reflexes','agility','speed')
+
+    nau=spec(1.8,'nautolan')
+
+    nei=spec(2,'neimoidian')
+
+    nel=spec(2,'nelvaanian')
+
+    net=spec(2,'tough skin','shapeshifting')
+
+    nik=spec(1.8,'nikto')
+
+    nog=spec(1.8,'noghri','run on all fours','leaping ability','heightened olfactory')
+
+    nos=spec(1.35,'nosaurian','burst of light')
+
+    ort=spec(1.4,'ortolan')
+
+    pau=spec(1.9,'pau an')
+
+    kal=spec(1.4,'kallidahin')
+
+    pri=spec(4,'priapulin','many eyes','six arms')
+
+    quo=spec(1.8,'quarren','ink spitting','swimming')
+
+    que=spec(1.8,'quermian','four arms')
+
+    rak=spec(1.8,'rakata','strong','claws')
+
+    rod=spec(1.8,'rodian')
+
+    roo=spec(1.8,'roonan')
+
+    ryn=spec(1.6,'ryn','prehensile tail')
+
+    sel=spec(1.8,'selkath')
+
+    sau=spec(1.7,'sauvax','tough skin','spatial perception')
+
+    sel=spec(2,'selonian','strong','all fours running','moves fast','swimming','large tail','claws','night vision')
+
+    shi=spec(1.8,'shi ido','shapeshifting','telepathy')
+
+    shis=spec(1.8,'shistavanen','endurance','moves fast','night vision','heightened senses','all fours running')
+
+    sit=spec(1.8,'sith','force sensitive')
+
+    ska=spec(1.9,'skakoan')
+
+    sni=spec(1.8,'snivvian')
+
+    ssi=spec(2,'ssi-ruu','very strong','moves fast','heightened olfactory')
+
+    sul=spec(1.8,'sullustan')
+
+    tal=spec(1.8,'talortai','regeneration','force sensitive')
+
+    talz=spec(2,'talz','many eyes','night vision')
+
+    tau=spec(2,'taung','strong','claws')
+
+    tar=spec(1.7,'tarasin','camoflauge skin','force sensing','heightened intelligence')
+
+    taun=spec(2,'tauntaun')
+
+    tch=spec(2,'tchuukthai')
+
+    ter=spec(3.2,'terentatek','large claws','tusks')
+
+    tha=spec(3,'thakwaash','very strong')
+
+    the=spec(1.8,'theelin')
+
+    thi=spec(1.7,'thisspiasian','four arms','claws')
+
+    tla=spec(2.5,'t landa til','tough skin','able to emit shockwave')
+
+    tof=spec(2.5,'very strong')
+
+    tog=spec(1.8,'togruta')
+
+    toy=spec(1.5,'toydarian','wings','tusks','force resistant')
+
+    tra=spec(2.1,'trandoshan','regeneration','very strong')
+
+    tri=spec(2,'trianii','prehensile tail','leaping ability','heightened sight','agility')
+
+    tro=spec(1.7,'trogodile')
+
+    troi=spec(2,'troig','long tail','four arms')
+
+    tun=spec(1.7,'tunroth','tracking ability')
+
+    tus=spec(1.9,'tusken raider')
+
+    twi=spec(1.8,'twi lek')
+
+    ugn=spec(1,'ugnaught','tusks','strong')
+
+    umb=spec(1.8,'umbaran')
+
+    uta=spec(1.4,'utai','night vision')
+
+    vaa=spec(1.5,'vaathkree','very tough skin')
+
+    ver=spec(1.9,'verpine','tough skin','heightened sight')
+
+    vor=spec(2,'vor','wings')
+
+    vox=spec(4,'voxyn','poison tail','acid spit','large claws','moves fast','agility')
+
+    vur=spec(1.8,'vurk')
+
+    vul=spec(1,'vulperteen','tusks','toxin resistance')
+
+    wee=spec(1.89,'weequay','tough skin')
+
+    whi=spec(2,'whiphid','tusks')
+
+    woo=spec(2.5,'wookie','claws','very strong')
+
+    xex=spec(1.3,'xexto','six arms')
+
+    yev=spec(1.9,'yeventha','claws','tough skin')
+
+    yin=spec(2.7,'yinchorri','force resistant','endurance','pain resistance')
+
+    yuu=spec(1.9,'yuuzhan vong','tough skin','force resistant')
+
+    yuz=spec(2.5,'yuzzem','very strong')
+
+    zab=spec(1.8,'zabrak')
+
+    zyg=spec(1.8,'zygerrian')
+
+    listSWspec=[abe, aby, ale, ama, ann, ano, anz, aqu, arc, bal, bar, bes, bit, blo, bot, caa, cat, cel, cer, cha, chi, chis, cla, cod, cow, das, defe, dev, dre, dro, dug, dur, elo, epi, ewo, fal, fee, fer, fro, gad, gam, gan, gank, gen, geo, giv, gos, got, gra, gre, gun, har, her, hne, huk, hss, hut, ikt, ish, ith, jaw, kal, kam, kar, kel, kit, kla, kow, kyu, lan, las, lur, mas, mir, mon, muu, myn, naga, nau, nei, nel, net, nik, nog, nos, ort, pau, kal, pri, quo, que, rak, rod, roo, ryn, sel, sau, sel, shi, shis, sit, ska, sni, ssi, sul, tal, talz, tau, tar, taun, tch, ter, tha, the, thi, tla, tof, tog, toy, tra, tri, tro, troi, tun, tus, twi, ugn, umb, uta, vaa, ver, vor, vul, wee, whi, woo, xex, yev, yin, yuu, yuz, zab, zyg]
+
+
+    y=random.randint(0, (len(listSWspec) - 1))
+    x=(listSWspec[y])
+    print('The', x.name, 'is', x.hgt, 'meters tall')
+    if x.asp1 == 0:
+        print()
+    else:
+        print('It has', x.asp1)
+        if x.asp2 == 0:
+            print()
+        else:
+            print('It has', x.asp2)
+            if x.asp3 == 0:
+                print()
+            else:
+                print('It has', x.asp3)
+                if x.asp4 == 0:
+                    print()
+                else:
+                    print('It has', x.asp4)
+                    if x.asp5 == 0:
+                        print()
+                    else:
+                        print('It has', x.asp5)
+                        if x.asp6 == 0:
+                            print()
+                        else:
+                            print('It has', x.asp6)
+                            if x.asp7 == 0:
+                                print()
+                            else:
+                                print('It has', x.asp7)
+                                if x.asp8 == 0:
+                                    print('That is all')
+                                else:
+                                    print('It has', x.asp8)
+                                    print('That is all')
